@@ -46,6 +46,7 @@ body {
 
 .menu {
 	grid-area: menu;
+	padding-right: 100px;
 }
 
 .slideshow {
@@ -66,18 +67,57 @@ body {
 
 .grid-container {
   	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-auto-rows: minmax(100px, auto);
   	grid-template-areas:
-    'menu header header header header header header'
-    'menu main main main right right right'
-    'menu footer footer footer . . .';
+    'menu menu header header header header header header header header header header'
+    'menu menu main main main main main right right right right right'
+    'menu menu footer footer footer footer footer . . . . .';
   	gap: 10px;
-  	background-color: #2196F3;
   	padding: 10px;
 }
 
 .grid-container > div {
-	background-color: white;
 	text-align: center;
   	padding: 20px 0;
   	font-size: 30px;
+}
+
+.menucategory {
+	background-color: white;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 10px;
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 1));
+}
+
+h2 {
+	font-family: aptly,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: rgba(217,40,24,1);
+	font-size: 36px;
+}
+
+.contentcontainer {
+	background-color: white;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 10px;
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 1));
+	text-align: left;
+	min-height: 200px;
+}
+
+h3 {
+	font-family: Calibri;
+	font-weight: 700;
+	font-size: 28px;
+	color: rgba(217,40,24,1);
+}
+
+.contentcontainer p {
+	font-family: Calibri;
+	font-weight: 400;
+	font-size: 18px;
 }
