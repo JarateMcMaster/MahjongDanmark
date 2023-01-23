@@ -46,16 +46,14 @@ body {
 
 .menu {
 	grid-area: menu;
-	height: 100%;
-	float: left;
 }
 
 .slideshow {
-	grid-area: main;
+	grid-area: header;
 }
 
 .main {
-	grid-area: left;
+	grid-area: main;
 }
 
 .contact {
@@ -63,19 +61,23 @@ body {
 }
 
 .news {
-	grid-area: main;
+	grid-area: footer;
 }
 
 .grid-container {
-  display: grid;
-  gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
+  	display: grid;
+  	grid-template-areas:
+    'menu header header header header header header'
+    'menu main main main right right right'
+    'menu footer footer footer . . .';
+  	gap: 10px;
+  	background-color: #2196F3;
+  	padding: 10px;
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+	background-color: white;
+	text-align: center;
+  	padding: 20px 0;
+  	font-size: 30px;
 }
