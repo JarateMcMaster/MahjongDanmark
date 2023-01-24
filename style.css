@@ -104,6 +104,41 @@ h2 {
 	font-size: 36px;
 }
 
+.dropbtn {
+	font-family: aptly,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: rgba(217,40,24,1);
+	font-size: 36px;
+	background-color: rgba(0, 0, 0, 0);
+	cursor: pointer;
+}
+
+.dropdown-content {
+	display: none;
+	font-family: Calibri;
+	font-weight: 700;
+	font-size: 26px;
+	margin-bottom: 10px;
+	text-align: left;
+	margin-left: 10%;
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: rgba(217,40,24,1);
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	color: black;
+}
+
+.menucategory:hover .dropdown-content {
+	display: block;
+}
+
 .contentcontainer {
 	background-color: white;
 	border-radius: 5px;
